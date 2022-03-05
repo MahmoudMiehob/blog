@@ -26,3 +26,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/myprofile',[UserController::class, 'showmyprofile'])->name('showmyprofile');
 
 
+

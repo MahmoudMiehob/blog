@@ -16,8 +16,9 @@
                     <div class="login-reg-bg">
                         <div class="log-reg-area sign">
                             <h2 class="log-title">Login</h2>
-
-
+                            <p>{{ __('Are you  a new member?') }}
+                            <a href="{{ route('register') }}" title="register" >{{ __('join now') }}</a>
+                            </p>
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group">
