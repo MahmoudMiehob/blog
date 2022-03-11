@@ -20,12 +20,16 @@ Route::get('/', function () {
 });
 
 
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/myprofile', [App\Http\Controllers\ProfileController::class, 'index'])->name('myprofile')->middleware('auth');
 
+Route::get('/dash',function(){
 
+    return ('home page');
 
-
+  });
